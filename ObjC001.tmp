@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4rkfw6doa5th"]
+
+[ext_resource type="Script" path="res://Object.gd" id="1_8la0r"]
+[ext_resource type="Texture2D" uid="uid://njvyvfje7uya" path="res://Assets/TCube2.png" id="2_kubu7"]
+[ext_resource type="Texture2D" uid="uid://bnqpxqhteksbc" path="res://Assets/TOre1.png" id="2_yoj62"]
+[ext_resource type="AudioStream" uid="uid://ckied8a8o8ywc" path="res://Assets/metal-hit-12-193278.mp3" id="3_dmobu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vas1b"]
+
+[node name="ObjectBody" type="Node2D"]
+z_index = 10
+scale = Vector2(2, 2)
+script = ExtResource("1_8la0r")
+ObjSprite = ExtResource("2_yoj62")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 10
+texture = ExtResource("2_kubu7")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 10
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 10
+shape = SubResource("RectangleShape2D_vas1b")
+
+[node name="Clunk" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dmobu")
+volume_db = -17.669
+pitch_scale = 0.82
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.501961)
+z_index = 9
+position = Vector2(0, 4)
+scale = Vector2(1, 0.5)
+texture = ExtResource("2_kubu7")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

@@ -1,0 +1,137 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdrdthebcfiqt"]
+
+[ext_resource type="Texture2D" uid="uid://b4aw32d6y2pmp" path="res://Assets/Todd.png" id="1_ijfsh"]
+[ext_resource type="Script" path="res://todd.gd" id="1_m8fdl"]
+[ext_resource type="AudioStream" uid="uid://dfmt5vr22i20n" path="res://Assets/static-noise-194184.mp3" id="2_1rmmn"]
+
+[sub_resource type="Animation" id="Animation_8xial"]
+resource_name = "Intro"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.075, 1.5, 2.4, 3.7, 5.2, 7, 8.6, 9.9, 11.8, 13.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 7.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(3, 3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3, 7.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -10), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 7.8, 15),
+"transitions": PackedFloat32Array(1, 0.277392, 6.27667),
+"update": 0,
+"values": [Color(0.027451, 0.0156863, 0.00392157, 0.356863), Color(0.513233, 0.513233, 0.513232, 1), Color(0.873299, 0.873298, 0.873298, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Static:pitch_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 6, 7.8, 14.3),
+"transitions": PackedFloat32Array(5.27803, 1, 8.28212, 1.86606),
+"update": 0,
+"values": [0.02, 0.02, 0.05, 0.16]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Static:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(-0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Static:volume_db")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(17.2, 19.4),
+"transitions": PackedFloat32Array(1, 2.14355),
+"update": 0,
+"values": [-7.348, -15.97]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p0qos"]
+_data = {
+"Intro": SubResource("Animation_8xial")
+}
+
+[node name="TODD" type="Node2D" groups=["group_name"]]
+script = ExtResource("1_m8fdl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../TODD")
+libraries = {
+"": SubResource("AnimationLibrary_p0qos")
+}
+
+[node name="TODD" type="Sprite2D" parent="."]
+modulate = Color(0.873299, 0.873298, 0.873298, 1)
+scale = Vector2(3, 3)
+texture = ExtResource("1_ijfsh")
+hframes = 10
+frame = 9
+
+[node name="Static" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_1rmmn")
+volume_db = -15.97
+pitch_scale = 0.16
+
+[node name="IntroTimer" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4.3, 4.3)
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 33.0
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+
+[connection signal="timeout" from="IntroTimer" to="." method="_on_intro_timer_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

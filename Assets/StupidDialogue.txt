@@ -1,0 +1,81 @@
+Stupid Dialogue
+
+TCube
+
+Q : One tungsten cube coming right up, sir.
+Q : Yeah its a goddam cube, what do you expect.
+
+Q : Well, cant tell you too much but lets just say I'm spending the money on "refereshments".
+Q : I aint got no idea what imma spend this money on but I sure will be rich.
+Q : Oh Mr. Questionface just relax, i aint no crook.
+
+Q : Just here to sell my cube mister.
+Q : You think I'm a spy, hell no. I eat russians for breakfeast.
+
+Q : This is stupid, just let me through.
+
+I : My my, clunky threats buddy, I aint got a wife.
+I : Take it chill Bad Cop, im a good guy.
+I : Why's this gotta be so serious. Im no spy goddamit, just let me sell my goddam cube.
+
+Statue
+
+Q : I found this thingy at my grandma's and thought it counted as Tungsten.
+Q : Well its tungsten, cant really call it a cube but its not that precise anyway right?
+Q : Found it on the street, right ugly, but probably worth a buck.
+
+I : Oh whats the big fuss bossman, it's tungsten, just let me through and we can all go home.
+I : Come up with some better threats next time. This a democrazy, you cant do things like that.
+I : Oh, shut up.
+
+Q : Well, cant tell you too much but lets just say I'm spending the money on "refereshments".
+Q : I aint got no idea what imma spend this money on but I sure will be rich.
+Q : Just wann get rid of this thingy and thought i could earn a buck.
+Q : Oh Mr. Questionface just relax, i aint no crook.
+
+Gold/Cheese
+
+Q : I heard on the news you want metals and such. Found this gold, at ... AN UNDISCLOSED LOCATION, how much you think i can get for this?
+Q : Was supposed to give you some "tungsten" but golds basically the same right? Cant be that different, one rare meral or another.
+Q : Just let me through, Im sure the guys in there will understand, what does it matter to you anyway?
+
+Q : Well, cant tell you too much but lets just say I'm spending the money on "refereshments".
+Q : I aint got no idea what imma spend this money on but I sure will be rich.
+Q : Oh Mr. Questionface just relax, i aint no crook.
+
+
+I : Hey, my badfor bringing the wrong metal, dont make it ok for you to speak like that.
+I : You cant do that buddy, this is a democrazy.
+I : I've got rights, this America.
+
+Bomb:
+
+Q : Dont really know what this is but i reckon its got some tungsten in it.
+Q : Found this on the street, i think this is good enough.
+
+Q : Well, cant tell you too much but lets just say I'm spending the money on "refereshments".
+Q : I aint got no idea what imma spend this money on but I sure will be rich.
+Q : Just wann get rid of this thingy and thought i could earn a buck.
+Q : Oh Mr. Questionface just relax, i aint no crook.
+
+I : I dont really know what this is, confiscate it if you want but I aint at fault here.
+I : This seems unnecesary to argue about, i already told you Im no crook.
+
+Chat - Normal
+
+C : You know all these people here seem so tense, whats everyone worried about.
+C : Outside too, everyone is scared half to death of these russians, they aint even met a real russian.
+C : Im a firm believer that untill something is proven to be a big deal, you shouldnt care about it.
+C : Well, thats just what I think, now let me go get my money.
+
+Chat - Normal
+
+C : This place is creepy man.
+C : It's like the walls surrond you on all sides.
+C : And they watch you, like theres men sitting on the other side waiting to take you.
+C : Almost like the russians have it.
+C : ...
+
+Chat - Interrogator
+
+C : I aint making smalltalk with you you maniac.

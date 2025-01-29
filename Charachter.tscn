@@ -1,0 +1,130 @@
+[gd_scene load_steps=10 format=3 uid="uid://dinlyanwsng0p"]
+
+[ext_resource type="Script" path="res://char.gd" id="1_f7p76"]
+[ext_resource type="Texture2D" uid="uid://dkfn1fxewkxca" path="res://Assets/Toddling.png" id="2_2n3l4"]
+[ext_resource type="AudioStream" uid="uid://cwj7fnqct0sby" path="res://Assets/Gunshot-Sound-Effect-Single-Shot.mp3" id="3_tjnxf"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jseib"]
+load_path = "res://.godot/imported/Toddling.png-592c1a69097fc0e4386e5fab5b9f8667.ctex"
+
+[sub_resource type="Animation" id="Animation_6bwqq"]
+resource_name = "Die"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 1, 2.1, 3.3, 3.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [11, 12, 13, 14, 15]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 3.2, 3.8, 9.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.653619, 0.653213, 0.970115, 1), Color(1, 0.563709, 0.500924, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ri8hl"]
+resource_name = "Happy"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_vrh1f"]
+resource_name = "Idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_fg68d"]
+resource_name = "Walk"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b8b6q"]
+_data = {
+"Die": SubResource("Animation_6bwqq"),
+"Happy": SubResource("Animation_ri8hl"),
+"Idle": SubResource("Animation_vrh1f"),
+"Walk": SubResource("Animation_fg68d")
+}
+
+[node name="Charachter" type="Node2D" groups=["group_name"]]
+script = ExtResource("1_f7p76")
+Look = SubResource("CompressedTexture2D_jseib")
+
+[node name="Gun" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tjnxf")
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 12.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b8b6q")
+}
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_2n3l4")
+hframes = 16
+frame = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HappyTimer" type="Timer" parent="."]
+wait_time = 1.6
+one_shot = true
+
+[node name="GunTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
+[connection signal="timeout" from="HappyTimer" to="." method="_on_happy_timer_timeout"]
+[connection signal="timeout" from="GunTimer" to="." method="_on_gun_timer_timeout"]

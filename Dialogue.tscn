@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://jfpdgpfbsg7h"]
+
+[ext_resource type="Script" path="res://Dialogue.gd" id="1_3n652"]
+[ext_resource type="Texture2D" uid="uid://lj1m4soauuch" path="res://Assets/TransparentBackground.png" id="2_dwegs"]
+[ext_resource type="FontFile" uid="uid://cxcn1ipu1jqfk" path="res://Assets/PixelFJVerdana12pt.ttf" id="2_jc5ll"]
+[ext_resource type="AudioStream" uid="uid://ckied8a8o8ywc" path="res://Assets/metal-hit-12-193278.mp3" id="4_oqo5q"]
+
+[sub_resource type="FontVariation" id="FontVariation_h4kl0"]
+base_font = ExtResource("2_jc5ll")
+spacing_glyph = 3
+spacing_space = 8
+
+[node name="Dialogue" type="Node2D"]
+z_index = 10
+script = ExtResource("1_3n652")
+
+[node name="Label" type="Label" parent="."]
+z_index = 11
+offset_left = -201.0
+offset_top = -135.0
+offset_right = 300.0
+offset_bottom = 25.0
+scale = Vector2(0.796617, 1.73792)
+theme_override_fonts/font = SubResource("FontVariation_h4kl0")
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="end" type="Timer" parent="."]
+
+[node name="next_char" type="Timer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0.462745, 0.32549, 1)
+z_index = 10
+position = Vector2(-16, 4)
+scale = Vector2(4009, 4009)
+texture = ExtResource("2_dwegs")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_oqo5q")
+volume_db = -30.558
+pitch_scale = 3.6
+
+[connection signal="timeout" from="end" to="." method="_on_end_timeout"]
+[connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]

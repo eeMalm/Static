@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6su55me01mdj"]
+
+[ext_resource type="Texture2D" uid="uid://bpu50pd3w852m" path="res://Assets/SHIFT-OVER.png" id="1_jd6sm"]
+[ext_resource type="Script" path="res://SHIFTOVER.gd" id="1_me4jn"]
+[ext_resource type="FontFile" uid="uid://bf44w0kgafg1w" path="res://Assets/ARCADECLASSIC.TTF" id="2_t2uhm"]
+
+[node name="Node2D" type="Node2D"]
+z_index = 11
+position = Vector2(-1, 2)
+script = ExtResource("1_me4jn")
+
+[node name="Shift-over" type="Sprite2D" parent="."]
+z_index = 10
+scale = Vector2(0.875, 0.875)
+texture = ExtResource("1_jd6sm")
+
+[node name="GS" type="Label" parent="Shift-over"]
+z_index = 11
+offset_left = 140.571
+offset_top = 105.143
+offset_right = 180.571
+offset_bottom = 128.143
+scale = Vector2(1.45487, 1.197)
+theme_override_fonts/font = ExtResource("2_t2uhm")
+theme_override_font_sizes/font_size = 22
+text = "123"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="IS" type="Label" parent="Shift-over"]
+z_index = 11
+offset_left = 140.571
+offset_top = 14.8571
+offset_right = 180.571
+offset_bottom = 37.8571
+scale = Vector2(1.45487, 1.197)
+theme_override_fonts/font = ExtResource("2_t2uhm")
+theme_override_font_sizes/font_size = 22
+text = "123"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="GR" type="Label" parent="Shift-over"]
+z_index = 11
+offset_left = 140.571
+offset_top = 72.0
+offset_right = 176.571
+offset_bottom = 95.0
+scale = Vector2(1.45487, 1.197)
+theme_override_fonts/font = ExtResource("2_t2uhm")
+theme_override_font_sizes/font_size = 22
+text = "123"
+metadata/_edit_use_anchors_ = true
+
+[node name="IR" type="Label" parent="Shift-over"]
+z_index = 11
+offset_left = 140.571
+offset_top = -18.2857
+offset_right = 176.571
+offset_bottom = 4.71428
+scale = Vector2(1.45487, 1.197)
+theme_override_fonts/font = ExtResource("2_t2uhm")
+theme_override_font_sizes/font_size = 22
+text = "123"
+metadata/_edit_use_anchors_ = true
+
+[node name="GK" type="Label" parent="Shift-over"]
+z_index = 11
+offset_left = 140.571
+offset_top = 45.7143
+offset_right = 180.571
+offset_bottom = 68.7144
+scale = Vector2(1.45487, 1.197)
+theme_override_fonts/font = ExtResource("2_t2uhm")
+theme_override_font_sizes/font_size = 22
+text = "123"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="IK" type="Label" parent="Shift-over"]
+z_index = 11
+offset_left = 140.571
+offset_top = -52.5714
+offset_right = 180.571
+offset_bottom = -29.5714
+scale = Vector2(1.45487, 1.197)
+theme_override_fonts/font = ExtResource("2_t2uhm")
+theme_override_font_sizes/font_size = 22
+text = "123"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

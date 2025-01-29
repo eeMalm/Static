@@ -1,0 +1,38 @@
+Spy Dialogue
+
+Hello yes I am selling Tungstenne, American Tungstenne. 			QSTART
+I bought Tungsten 10 year ago, it's super quality.				QSTART
+100% real American Tungsten, for you Sir.					QSTART
+
+I am spending money on guns and America.					QMID1
+I am doanting money to military. FOR AMERIGA					QMID1
+
+I am from America, drove here to sell my Tungsten.				QMID2
+I am from America, flew many hour here to sell my Tungsten.			QMID2
+
+So yes I am free to go now?							Q
+So we done here?								Q
+
+I WOULD NEVER BETRAY AMERICA, O O SAY CAN YOU SEE, BY THE DAWNS EARLY LIGHT...	I
+I WOULD NEVER LIE, I AM TRUE AMERICAN						I
+I PROMISE YOU OFFICER I AM NOT SPY IN K32 RUSSIAN UNIT, I WOUDLD NEVER		I
+I AM AMERICAN CITIZEN, I HAVE CONSTITUITON, YOU CANT				I
+
+This is very nice place, good job you have man.					C
+I love ameriga, very lovely concrete and asphalt, it great.			null
+So, you know any funny military secrets?					null
+Oh no no, just a question. Have good day. 					null
+Yes, I would like to go now.							null
+. . .										null
+I mean, do you know any secrets?						null
+Oh, so what exactly is STATIC building?						null
+Oh, orbital, thats fancy.							null
+Thank you for great conversation.						null
+
+I'm good, thank you. Just want money for my wife.				C
+Her name is Ale... Jane, Jane Smith. Living in Kansas...			null
+Thank you for asking man, so how are you doing.					null
+Mmm very good, so I can go now, yes?						null
+
+Very lovely palce here sir, happy to contibute to STATIC.			C
+

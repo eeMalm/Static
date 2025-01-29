@@ -1,0 +1,269 @@
+[gd_scene load_steps=36 format=3 uid="uid://cfjn3r7awawyp"]
+
+[ext_resource type="Script" path="res://World.gd" id="1_7jpe1"]
+[ext_resource type="Texture2D" uid="uid://hqegkct8arx7" path="res://Assets/TCube1.png" id="1_e1hhf"]
+[ext_resource type="Texture2D" uid="uid://bkf1t2lass6kq" path="res://Assets/Char1.png" id="2_ped6q"]
+[ext_resource type="FontFile" uid="uid://bf44w0kgafg1w" path="res://Assets/ARCADECLASSIC.TTF" id="2_xrby1"]
+[ext_resource type="Texture2D" uid="uid://by82f8mwaoccm" path="res://Assets/Char2.png" id="3_4wk0y"]
+[ext_resource type="Texture2D" uid="uid://dt4brnh7u64b5" path="res://Assets/Desk.png" id="3_lpix8"]
+[ext_resource type="Texture2D" uid="uid://dxffg1dhhrayx" path="res://Assets/Char3.png" id="4_aq3mv"]
+[ext_resource type="Script" path="res://DeskManager.gd" id="4_uc0i8"]
+[ext_resource type="Texture2D" uid="uid://d3wuflffwa53u" path="res://Assets/Char4.png" id="5_1f8gi"]
+[ext_resource type="Texture2D" uid="uid://dkyqx0ls0o312" path="res://Assets/Char5.png" id="6_uvnnr"]
+[ext_resource type="Texture2D" uid="uid://dbianbb817bin" path="res://Assets/Char6.png" id="7_mgceo"]
+[ext_resource type="Texture2D" uid="uid://bmceksn1ssmge" path="res://Assets/Char7.png" id="8_w853w"]
+[ext_resource type="Texture2D" uid="uid://dkrbqlciqybkj" path="res://Assets/Char8.png" id="9_o1lb5"]
+[ext_resource type="Texture2D" uid="uid://brflrpsunlx0l" path="res://Assets/Char9.png" id="10_kqdvb"]
+[ext_resource type="Texture2D" uid="uid://dkfn1fxewkxca" path="res://Assets/Toddling.png" id="11_i35et"]
+[ext_resource type="Texture2D" uid="uid://cctnv5tlktlbs" path="res://Assets/TStatuette1.png" id="12_v4dvy"]
+[ext_resource type="Texture2D" uid="uid://bnqpxqhteksbc" path="res://Assets/TOre1.png" id="13_i85lb"]
+[ext_resource type="Texture2D" uid="uid://cpew1bem5utr" path="res://Assets/TOre3.png" id="14_g55ao"]
+[ext_resource type="Texture2D" uid="uid://cccd4mf6yved1" path="res://Assets/TOre2.png" id="14_vyfc0"]
+[ext_resource type="Texture2D" uid="uid://bq311b12hvuo5" path="res://Assets/Goldblock.png" id="15_v73dk"]
+[ext_resource type="Texture2D" uid="uid://bx0ub3xjuu5rj" path="res://Assets/STATIC-NEEDS-TUNSTEN.png" id="16_b6b3t"]
+[ext_resource type="Texture2D" uid="uid://r6lqbi313cqv" path="res://Assets/Cheese.png" id="16_ib1ae"]
+[ext_resource type="Texture2D" uid="uid://c0x6o3a5vn8ar" path="res://Assets/BombAnim.png" id="17_hn2a7"]
+[ext_resource type="Texture2D" uid="uid://v5aoyi5dygn5" path="res://Assets/SELL-TODAY.png" id="17_idxxo"]
+[ext_resource type="Texture2D" uid="uid://cfthpvt5e4817" path="res://Assets/ICON.png" id="18_apsym"]
+[ext_resource type="Texture2D" uid="uid://numul6wdk14p" path="res://Assets/BackGround.png" id="18_oo6kt"]
+[ext_resource type="Texture2D" uid="uid://b3tnafd6mtvhe" path="res://Assets/JOIN-US-TODAY.png" id="21_tamp6"]
+[ext_resource type="Texture2D" uid="uid://cggmx2c80f6l1" path="res://Assets/TODD-NEEDS-YOUpng.png" id="22_otw8p"]
+[ext_resource type="Texture2D" uid="uid://d4bhs0uthsxx2" path="res://Assets/Window - kopia-export.png" id="23_l2nek"]
+[ext_resource type="Texture2D" uid="uid://dx4vlv04tnhg1" path="res://Assets/Window - kopia.png" id="27_rd8yu"]
+[ext_resource type="AudioStream" uid="uid://dfmt5vr22i20n" path="res://Assets/static-noise-194184.mp3" id="28_kaudd"]
+
+[sub_resource type="Animation" id="Animation_jsk0k"]
+resource_name = "Sell"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w4b1r"]
+_data = {
+"Sell": SubResource("Animation_jsk0k")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ojgl"]
+size = Vector2(88, 37)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hoek8"]
+
+[node name="World" type="Node2D" groups=["TheWorld"]]
+script = ExtResource("1_7jpe1")
+Char1 = ExtResource("2_ped6q")
+Char2 = ExtResource("3_4wk0y")
+Char3 = ExtResource("4_aq3mv")
+Char4 = ExtResource("5_1f8gi")
+Char5 = ExtResource("6_uvnnr")
+Char6 = ExtResource("7_mgceo")
+Soldier = ExtResource("8_w853w")
+Spy1 = ExtResource("9_o1lb5")
+Spy2 = ExtResource("10_kqdvb")
+Toddling = ExtResource("11_i35et")
+TCube = ExtResource("1_e1hhf")
+TStatue = ExtResource("12_v4dvy")
+TOreT = ExtResource("13_i85lb")
+TOreO = ExtResource("14_vyfc0")
+TOreD = ExtResource("14_g55ao")
+Gold = ExtResource("15_v73dk")
+Cheese = ExtResource("16_ib1ae")
+Bomb = ExtResource("17_hn2a7")
+Keys = ExtResource("18_apsym")
+HipFlask = ExtResource("18_apsym")
+Note1 = ExtResource("18_apsym")
+Note2 = ExtResource("18_apsym")
+JOIN_US_TODAY = ExtResource("21_tamp6")
+TODD_NEEDS_YOU = ExtResource("22_otw8p")
+WINDOW_TODD = ExtResource("23_l2nek")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Props/Sell-today")
+libraries = {
+"": SubResource("AnimationLibrary_w4b1r")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4.3, 4.3)
+
+[node name="Props" type="Node" parent="."]
+
+[node name="Static-needs-tunsten" type="Sprite2D" parent="Props"]
+z_index = -2
+position = Vector2(-64, -87)
+rotation = -0.165806
+scale = Vector2(0.255, 0.255)
+skew = 0.0890118
+texture = ExtResource("16_b6b3t")
+
+[node name="Sell-today" type="Sprite2D" parent="Props"]
+z_index = -1
+position = Vector2(74, -91)
+rotation = 0.15708
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("17_idxxo")
+hframes = 4
+
+[node name="BackGround" type="Sprite2D" parent="Props"]
+z_index = -2
+position = Vector2(-178.124, -6.21337)
+rotation = 1.5708
+scale = Vector2(8.49316, 6.89735)
+texture = ExtResource("18_oo6kt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Props"]
+z_index = 5
+position = Vector2(176, 13)
+rotation = 1.5708
+scale = Vector2(8.81414, 6.02549)
+texture = ExtResource("18_oo6kt")
+
+[node name="Window" type="Sprite2D" parent="Props"]
+modulate = Color(0.473976, 0.473976, 0.473976, 1)
+z_index = 1
+texture_filter = 1
+position = Vector2(23, 24)
+scale = Vector2(2, 2)
+texture = ExtResource("27_rd8yu")
+offset = Vector2(-11.5, -44)
+
+[node name="Desk" type="Sprite2D" parent="Props"]
+texture_filter = 1
+position = Vector2(0, 64)
+scale = Vector2(2, 2)
+texture = ExtResource("3_lpix8")
+script = ExtResource("4_uc0i8")
+
+[node name="Seize" type="Label" parent="Props/Desk"]
+z_index = 3
+texture_filter = 1
+offset_left = 14.0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 37.0
+scale = Vector2(0.5, 0.5)
+tooltip_text = "Take their item"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("2_xrby1")
+theme_override_font_sizes/font_size = 20
+text = "Seize
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2DSeize" type="Area2D" parent="Props/Desk/Seize"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/Desk/Seize/Area2DSeize"]
+position = Vector2(42, 17.5)
+shape = SubResource("RectangleShape2D_2ojgl")
+
+[node name="Chat" type="Label" parent="Props/Desk"]
+z_index = 3
+texture_filter = 1
+offset_left = -51.0
+offset_top = -1.0
+offset_right = 33.0
+offset_bottom = 34.0
+scale = Vector2(0.5, 0.5)
+tooltip_text = "Just make smalltalk"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("2_xrby1")
+theme_override_font_sizes/font_size = 21
+text = "Chat
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2DChat" type="Area2D" parent="Props/Desk/Chat"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/Desk/Chat/Area2DChat"]
+position = Vector2(42, 17.5)
+shape = SubResource("RectangleShape2D_2ojgl")
+
+[node name="Interrogate" type="Label" parent="Props/Desk"]
+z_index = 3
+texture_filter = 1
+offset_left = -55.0
+offset_top = -27.0
+offset_right = 42.0
+offset_bottom = 9.0
+scale = Vector2(0.5, 0.5)
+tooltip_text = "Make them shiver"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("2_xrby1")
+theme_override_font_sizes/font_size = 14
+text = "Interrogate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2DInterrogate" type="Area2D" parent="Props/Desk/Interrogate"]
+scale = Vector2(1.09742, 1.03561)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/Desk/Interrogate/Area2DInterrogate"]
+position = Vector2(42, 17.5)
+shape = SubResource("RectangleShape2D_2ojgl")
+
+[node name="Question" type="Label" parent="Props/Desk"]
+z_index = 3
+texture_filter = 1
+offset_left = 11.5
+offset_top = -25.5
+offset_right = 104.5
+offset_bottom = 11.5
+scale = Vector2(0.5, 0.5)
+tooltip_text = "Find out some base information"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("2_xrby1")
+theme_override_font_sizes/font_size = 18
+text = "Question"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2DQuestion" type="Area2D" parent="Props/Desk/Question"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/Desk/Question/Area2DQuestion"]
+position = Vector2(42, 17.5)
+shape = SubResource("RectangleShape2D_2ojgl")
+
+[node name="Area2DStop" type="Area2D" parent="Props/Desk"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/Desk/Area2DStop"]
+position = Vector2(-43.5, 26.5)
+scale = Vector2(-0.56138, -0.601571)
+shape = SubResource("CircleShape2D_hoek8")
+
+[node name="Area2DGo" type="Area2D" parent="Props/Desk"]
+position = Vector2(91.5, 1.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Props/Desk/Area2DGo"]
+position = Vector2(-43.5, 26.5)
+scale = Vector2(-0.56138, -0.601571)
+shape = SubResource("CircleShape2D_hoek8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("28_kaudd")
+volume_db = -7.045
+pitch_scale = 0.01
+autoplay = true
+
+[connection signal="mouse_entered" from="Props/Desk/Seize/Area2DSeize" to="Props/Desk" method="_on_area_2d_seize_mouse_entered"]
+[connection signal="mouse_exited" from="Props/Desk/Seize/Area2DSeize" to="Props/Desk" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Props/Desk/Chat/Area2DChat" to="Props/Desk" method="_on_area_2d_chat_mouse_entered"]
+[connection signal="mouse_exited" from="Props/Desk/Chat/Area2DChat" to="Props/Desk" method="_on_area_2d_chat_mouse_exited"]
+[connection signal="mouse_entered" from="Props/Desk/Interrogate/Area2DInterrogate" to="Props/Desk" method="_on_area_2d_interrogate_mouse_entered"]
+[connection signal="mouse_exited" from="Props/Desk/Interrogate/Area2DInterrogate" to="Props/Desk" method="_on_area_2d_interrogate_mouse_exited"]
+[connection signal="mouse_entered" from="Props/Desk/Question/Area2DQuestion" to="Props/Desk" method="_on_area_2d_question_mouse_entered"]
+[connection signal="mouse_exited" from="Props/Desk/Question/Area2DQuestion" to="Props/Desk" method="_on_area_2d_question_mouse_exited"]
+[connection signal="mouse_entered" from="Props/Desk/Area2DStop" to="Props/Desk" method="_on_area_2d_stop_mouse_entered"]
+[connection signal="mouse_exited" from="Props/Desk/Area2DStop" to="Props/Desk" method="_on_area_2d_stop_mouse_exited"]
+[connection signal="mouse_entered" from="Props/Desk/Area2DGo" to="Props/Desk" method="_on_area_2d_go_mouse_entered"]
+[connection signal="mouse_exited" from="Props/Desk/Area2DGo" to="Props/Desk" method="_on_area_2d_go_mouse_exited"]

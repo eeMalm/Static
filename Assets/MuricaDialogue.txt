@@ -1,0 +1,173 @@
+Murica Dialogue
+
+T:
+
+America needs this, if I can contribute I will.					QSTART
+I've had this tungsten cube for a long time, but today I need to give it up. 	QSTART
+I've decided to charitably sell my beloved tungsten cube, FOR AMERICA.		QSTART
+
+What will I do with the money? I will buy guns, for self defense, ofcourse.	QMID1
+What will I do with the money? It's going towards my bunker. You never know.	QMID1
+What will I do with the money? I'm buying a musket, for self defense.		QMID1
+
+I'm from Orlando, but I drove here to contribute.				QMID2
+I'm from Utah, but I drove here to help the wonderful US MILITARY.		QMID2
+
+WHAT DO YOU MEAN 'ALTERIOR MOTIVE'? I would never let my country down.		QMID3
+
+No no no, please, I havent done anything.					I
+No no no, please, not my kids. I promise I'm good.				I
+
+I PROMISE TO STAND FOR MY COUNTRY, I WOULD NEVER LIE				I
+YOU CANT DO THIS, I HAVE RIGHTS							I
+
+Yeah, I'm happy to be here. It's my duty after all.				C
+Yup, my grandpa served in Afghanistan, It's my family's legacy.			null
+I'm proud to help crush those bastardly Russians.				null
+FOR AMERICA									null
+
+Thanks for asking man, I'm ok, just though times.				C
+Indeed, my Son got killed in that bombing down in Georgia.			null 
+It was tough to hear about, but now, more than ever I must support AMERICA.	null
+Thanks for listening man.							null
+
+You know, I saw something really strange last week.				C
+I was out in the forest, south of here, and saw a large cave.			null
+And I heard strange sound from in there, chanting, in some strange language.	null
+Must've been some Russian loonies, but I didnt go in there.			null
+Yeah, I reported it but noone has gotten back to me.				null
+The world is scary man.								null
+
+Hey don't try to make smalltalk buddy.						CI
+...										null
+
+S:
+
+America needs this, if I can contribute I will.					QSTART
+I've had this for a long time, just as decor, but today I need to give it up. 	QSTART
+I've decided to charitably sell my beloved tungsten Statue, FOR AMERICA.	QSTART
+
+What will I do with the money? I will buy guns, for self defense, ofcourse.	QMID1
+What will I do with the money? It's going towards my bunker. You never know.	QMID1
+What will I do with the money? I'm buying a musket, for self defense.		QMID1
+
+I'm from California, but I drove here to contribute.				QMID2
+I'm from Alaska, but I drove here to help the wonderful US MILITARY.		QMID2
+
+WHAT DO YOU MEAN 'ALTERIOR MOTIVE'? I would never let my country down.		QMID3
+
+No no no, please, I havent done anything, It's real tungsten.			I
+No no no, please, not my kids. I promise I'm good.				I
+
+I PROMISE TO STAND FOR MY COUNTRY, I WOULD NEVER LIE				I
+YOU CANT DO THIS, I HAVE RIGHTS							I
+
+Yeah, I'm happy to be here. It's my duty after all.				C
+Yup, my grandpa served in Afghanistan, It's my family's legacy.			null
+I'm proud to help crush those bastardly Russians.				null
+FOR AMERICA									null
+
+Thanks for asking man, I'm ok, just though times.				C
+Indeed, my Son got killed in that bombing down in Georgia.			null 
+It was tough to hear about, but now, more than ever I must support AMERICA.	null
+Thanks for listening man.							null
+
+You know, I saw something really strange last week.				C
+I was out in the forest, south of here, and saw a large cave.			null
+And I heard strange sound from in there, chanting, in some strange language.	null
+Must've been some Russian loonies, but I didnt go in there.			null
+Yeah, I reported it but noone has gotten back to me.				null
+The world is scary man.								null
+
+Hey don't try to make smalltalk buddy.						CI
+...										null
+
+
+G/C:
+
+America needs this, It's gold, but i just wanna contribute.			QSTART
+I've had this for a long time, in the attic, but today I need to give it up. 	QSTART
+I've decided to charitably sell my gold, FOR AMERICA.				QSTART
+
+What will I do with the money? I will buy guns, for self defense, ofcourse.	QMID1
+What will I do with the money? It's going towards my bunker. You never know.	QMID1
+What will I do with the money? I'm buying a musket, for self defense.		QMID1
+
+I'm from California, but I drove here to contribute.				QMID2
+I'm from Alaska, but I drove here to help the wonderful US MILITARY.		QMID2
+
+WHAT DO YOU MEAN 'ALTERIOR MOTIVE'? I would never let my country down.		QMID3
+
+No no no, please, I havent done anything, It's real gold man, I SWEAR	  	I
+No no no, please, not my kids. I promise I'm good.				I
+
+I PROMISE TO STAND FOR MY COUNTRY, I WOULD NEVER LIE				I
+YOU CANT DO THIS, I HAVE RIGHTS							I
+
+Yeah, I'm happy to be here. It's my duty after all.				C
+Yup, my grandpa served in Afghanistan, It's my family's legacy.			null
+I'm proud to help crush those bastardly Russians.				null
+FOR AMERICA									null
+
+Thanks for asking man, I'm ok, just though times.				C
+Indeed, my Son got killed in that bombing down in Georgia.			null 
+It was tough to hear about, but now, more than ever I must support AMERICA.	null
+Thanks for listening man.							null
+
+You know, I saw something really strange last week.				C
+I was out in the forest, south of here, and saw a large cave.			null
+And I heard strange sound from in there, chanting, in some strange language.	null
+Must've been some Russian loonies, but I didnt go in there.			null
+Yeah, I reported it but noone has gotten back to me.				null
+The world is scary man.								null
+
+Hey don't try to make smalltalk buddy.						CI
+...										null
+
+
+B:
+
+America needs this, I pretty sure this is tungsten.				QSTART
+I've had this thiny for a long time, in the attic, but today I give it up. 	QSTART
+I've decided to sell this thingy I found, FOR AMERICA.				QSTART
+
+What will I do with the money? I will buy guns, for self defense, ofcourse.	QMID1
+What will I do with the money? It's going towards my bunker. You never know.	QMID1
+What will I do with the money? I'm buying a musket, for self defense.		QMID1
+
+I'm from Kansas, but I drove here to contribute.				QMID2
+I'm from Detroit, but I drove here to help the wonderful US MILITARY.		QMID2
+
+WHAT DO YOU MEAN 'ALTERIOR MOTIVE'? I would never let my country down.		QMID3
+
+No no no, please, I  was just told to bring this man, I SWEAR.	  		I
+No no no, please, not my kids. I promise I'm good.				I
+
+I PROMISE TO STAND FOR MY COUNTRY, I WOULD NEVER LIE				I
+YOU CANT DO THIS, I HAVE RIGHTS							I
+
+Yeah, I'm happy to be here. It's my duty after all.				C
+Yup, my grandpa served in Afghanistan, It's my family's legacy.			null
+I'm proud to help crush those bastardly Russians.				null
+FOR AMERICA									null
+
+Thanks for asking man, I'm ok, just though times.				C
+Indeed, my Son got killed in that bombing down in Georgia.			null 
+It was tough to hear about, but now, more than ever I must support AMERICA.	null
+Thanks for listening man.							null
+
+You know, I saw something really strange last week.				C
+I was out in the forest, south of here, and saw a large cave.			null
+And I heard strange sound from in there, chanting, in some strange language.	null
+Must've been some Russian loonies, but I didnt go in there.			null
+Yeah, I reported it but noone has gotten back to me.				null
+The world is scary man.								null
+
+Hey don't try to make smalltalk buddy.						CI
+...										null
+
+
+
+
+
+

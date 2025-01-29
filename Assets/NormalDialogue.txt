@@ -1,0 +1,106 @@
+Normal Dialogue
+
+TCube
+
+Q : I bought this tungsten cube at an auction 10 years ago. It is very high quality.
+Q : My mother has owned a tungsten cube for a long time. But I don't really need it anymore, so I thought I would help STATIC.
+
+Q : What will i do with the money? Well, I'll use it to buy a new boat.
+Q : What will i do with the money? It's going to my savings, bad econmic times you know.
+Q : What will i do with the money? Im buying stocks buddy.
+Q : What will i do with the money? I'm gonna use it to pay off my mothers mortgage. If i get enough for the tungsten.
+
+I : I assure you sir ... IM A MODEL CITIZEN I just want tro contribute to STATIC.
+I : I ... I ... Dont understand, i just want to hand in my cube.
+
+I : Nothing strange here.
+
+Statue
+
+Q : I bought this item at a garage sale (randint) years ago. I love it dearly.
+Q : My  grandmother had this tungsten for a long time. But as american citizens it feels like our duty to hand in this cube.
+
+Q : What will i do with the money? Well, I'll use it to buy a new boat.
+Q : What will i do with the money? It's going to my savings, bad econmic times you know.
+Q : What will i do with the money? Im buying stocks buddy.
+Q : What will i do with the money? I'm gonna use it to pay off my mothers mortgage. If i get enough for the tungsten.
+
+I : I assure you sir ... IM A MODEL CITIZEN I just want tro contribute to STATIC.
+I : I ... I ... Dont understand, i just want to hand in some tungsten
+
+
+Gold/Cheese:
+Q: I know i shouldnt exactly bring this but i thought you could use it anyway, it's actually gold.
+Q: I havent exactly brought tungsten, but this is more valuable anyway.
+
+Q : What will i do with the money? Well, I'll use it to buy a new boat.
+Q : What will i do with the money? It's going to my savings, bad econmic times you know.
+Q : What will i do with the money? Im buying stocks buddy.
+Q : What will i do with the money? I'm gonna use it to pay off my mothers mortgage. If i get enough for the tungsten.
+
+I : I assure you sir ... IM A MODEL CITIZEN I just want tro contribute to STATIC.
+I : I ... I ... Dont understand, i just want to hadn in my cube, I mean it's not what you wanted but I just wanted to help.
+
+I : Nothing strange here Sir.
+
+Bomb:
+
+Q : I think its tungsten but im not completly sure what it is but i was just told to bring this.
+Q : Tungsten delivery Sir.
+
+Q : What will i do with the money? Well, I'll use it to buy a new boat.
+Q : What will i do with the money? It's going to my savings, bad econmic times you know.
+Q : What will i do with the money? Im buying stocks buddy.
+Q : What will i do with the money? I'm gonna use it to pay off my mothers mortgage. If i get enough for the tungsten.
+
+I : Someone just told me to bring this, Im not guilty!
+
+
+All normal
+
+Q : What will i do with the money? Well, I'll use it to buy a new boat.
+Q : What will i do with the money? It's going to my savings, bad econmic times you know.
+Q : What will i do with the money? Im buying stocks buddy.
+Q : What will i do with the money? I'm gonna use it to pay off my mothers mortgage. If i get enough for the tungsten.
+
+Q : Where I'm from? I drove 12 hours here from the Georgia.
+
+Q : What do you mean alterior motive, why would i have that.
+
+
+Chat 1 - friendly
+C : Im in town to sell this cube, pretty long trip, i think it will be worth it though.
+C : Yeah, times are tough you know, but Im doing alright.
+C : Did you hear about what the Russians are getting up to, crazy stuff happening over there.
+C : But i love this American demoracy, we stand alone for justice in a world of chaos.
+
+Chat 2 - friendly
+C : STATIC really is quite nice, brutal exterior but for a business it's quite alright.
+C : Thank you for asking really, I'm ok. My wife is sick and i hope this check can help me pay the medical fees.
+C : No, shes's not terminal but, it could get worse, you never know with radiation.
+C : Thank you for asking, i better get going now, shouldnt be holding up the line.
+
+Chat 3 - friendly
+C : Im doing good, you?
+C : Crazy world out there aint it? You know last week I saw something really strange.
+C : An airship, no markings but clearly a battleship.
+C : Must've been Russian, but what the bloody hell was it doing in Georgia.
+C : Im pleased to contibuite to STATIC's efforts.
+C : FOR DEMOCRACY
+
+Chat 4 - interrogate
+C : I ... I'm alright, just wanna go and sell my tungsten...
+C : ...
+C : You cracy bastard, why are you trying to make smalltalk after threatening my life.
+C : ...
+ 
+Chat 5 - nothing
+
+C : No security questions, just jumping straight to small talk?
+C : Well i guess im clear?
+
+
+
+
+
+
